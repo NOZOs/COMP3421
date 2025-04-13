@@ -41,7 +41,7 @@ $stmt->close();
             <tr>
                 <td><?= htmlspecialchars($post['username']) ?></td>
                 <td><?= htmlspecialchars($post['content']) ?></td>
-                <td><a href="/COMP3421/d_fm?id=<?= $post['id'] ?>" class="btn btn-primary">-Comment?</a></td>
+                <td><a href="/COMP3421/views/add_comment.view.php?id=<?= $post['id'] ?>" class="btn btn-warning">-Comment?</a></td>
                 <?php if ($_SESSION['role'] === 'admin'): ?>
                     <td><a href="/COMP3421/controllers/post.controller.php?action=delete&id=<?= $post['id'] ?>" class="btn btn-primary">-delete?</a></td>
                 <?php endif; ?>

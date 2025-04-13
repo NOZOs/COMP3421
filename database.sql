@@ -16,3 +16,12 @@ CREATE TABLE post (
 	`content` VARCHAR(255) NOT NULL,
 	PRIMARY KEY(`id`)
 );
+
+CREATE TABLE comment (
+	`id` INT(5) NOT NULL AUTO_INCREMENT,
+    `post_id` INT(5) NOT NULL,
+	`username` VARCHAR(16) NOT NULL,
+	`content` VARCHAR(255) NOT NULL,
+	PRIMARY KEY(`id`),
+    FOREIGN KEY (`post_id`) REFERENCES post(`id`)
+);
