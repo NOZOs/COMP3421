@@ -25,3 +25,10 @@ CREATE TABLE comment (
 	PRIMARY KEY(`id`),
     FOREIGN KEY (`post_id`) REFERENCES post(`id`)
 );
+
+ALTER TABLE comment
+DROP FOREIGN KEY comment_ibfk_1;
+
+ALTER TABLE comment
+ADD CONSTRAINT comment_ibfk_1
+FOREIGN KEY (post_id) REFERENCES post(id) ON DELETE CASCADE;
