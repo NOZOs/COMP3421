@@ -76,7 +76,7 @@ $stmt->close();
                     </ul>
                 </td>
                 <?php if ($_SESSION['role'] === 'admin'): ?>
-                    <td><a href="controllers/post.controller.php?action=delete&id=<?= $post_id ?>" class="btn btn-primary">Delete post</a></td>
+                    <td><a href="../controllers/post.controller.php?action=delete&id=<?= $post_id ?>" class="btn btn-primary">Delete post</a></td>
                 <?php endif; ?>
             </tr>
         <?php endforeach; ?>
