@@ -61,14 +61,14 @@ $stmt->close();
                 <td><?= htmlspecialchars($post['post_username']) ?></td>
                 <td><?= htmlspecialchars($post['post_content']) ?></td>
                 <td>
-                    <a href="views/add_comment.view.php?id=<?= $post_id ?>" class="btn btn-warning">+ Add Comment</a>
+                    <a href="../views/add_comment.view.php?id=<?= $post_id ?>" class="btn btn-warning">+ Add Comment</a>
                     <ul>
                         <?php if (!empty($post['comments'])): ?>
                             <?php foreach ($post['comments'] as $comment): ?>
                                 <li>
                                     <strong><?= htmlspecialchars($comment['username']) ?>:</strong> <?= htmlspecialchars($comment['content']) ?>
                                     <?php if ($_SESSION['role'] === 'admin'): ?>
-                                        <a href="controllers/comment.controller.php?action=delete&id=<?= $comment['id'] ?>" class="btn btn-warning">Delete comment</a>
+                                        <a href="../controllers/comment.controller.php?action=delete&id=<?= $comment['id'] ?>" class="btn btn-warning">Delete comment</a>
                                     <?php endif; ?>
                                 </li>
                             <?php endforeach; ?>
