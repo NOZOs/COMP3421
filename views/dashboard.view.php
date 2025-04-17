@@ -1,12 +1,13 @@
 <?php
 session_start();
 if (!isset($_SESSION['user_id'])) {
-    header("Location: index.php");
+    header("Location: app/index.php");
     exit();
 }
 
 
 require '../db_connect.php';
+require '../config.php';
 
 
 $stmt = $conn->prepare("
@@ -38,7 +39,7 @@ $stmt->close();
 <html>
 <head>
     <title>Dashboard</title>
-    <link rel="stylesheet" href="dashstyle.css">
+    <link rel="stylesheet" href="app/dashstyle.css">
 </head>
 <body>
 
