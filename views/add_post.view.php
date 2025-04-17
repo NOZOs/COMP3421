@@ -43,7 +43,7 @@ unset($_SESSION['errors'], $_SESSION['success']);
                 <label for="content">Post Content:</label>
                 <textarea name="content" id="content" rows="5" cols="50" maxlength="255" required placeholder="Enter your post content (max 255 characters)"></textarea>
             </div>
-            <button type="submit" name="add_post" class="btn btn-primary" onclick="gtag('event', 'add_post', {'event_category': 'engagement', 'event_label': 'New Post'});">Add Post</button>
+            <button type="submit" name="add_post" class="btn btn-primary" onclick="gtag('event', 'New post');">Add Post</button>
         </form>
         <a href="../views/dashboard.view.php" class="btn btn-warning">Back to Dashboard</a>
     </div>
