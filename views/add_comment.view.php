@@ -34,7 +34,7 @@ $post_id = (int)$_GET['id'];
                 <label for="content">comment:</label>
                 <textarea name="content" id="content" rows="5" cols="50" maxlength="255" required placeholder="Enter your comment (max 255 characters)"></textarea>
             </div>
-            <button type="submit" name="add_comment" class="btn btn-primary">Add comment</button>
+            <button type="submit" name="add_comment" class="btn btn-primary" onclick="gtag('event', 'add_comment', {'event_category': 'engagement', 'event_label': 'Add Comment Button'});">Add comment</button>
         </form>
         <a href="../views/dashboard.view.php" class="btn btn-warning">Back to Dashboard</a>
     </div>
