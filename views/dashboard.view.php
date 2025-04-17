@@ -44,7 +44,7 @@ $stmt->close();
 <body>
 
     <h1>Welcome, <?= htmlspecialchars($_SESSION['username']) ?> (Role: <?= htmlspecialchars($_SESSION['role']) ?>)</h1>
-    <a href="controllers/logout.controller.php" class="btn btn-warning">Logout</a>
+    <a href="../controllers/logout.controller.php" class="btn btn-warning">Logout</a>
     <h2>List of Posts</h2>
     <table class="table">
         <thead>
@@ -82,6 +82,6 @@ $stmt->close();
         <?php endforeach; ?>
         </tbody>
     </table>
-    <a href="views/add_post.view.php" class="btn btn-warning">+ Add Post</a>
+    <a href="../views/add_post.view.php" class="btn btn-warning">+ Add Post</a>
 </body>
 </html>
