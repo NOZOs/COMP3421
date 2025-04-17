@@ -3,7 +3,7 @@ $servername = "ehc1u4pmphj917qf.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 $username = "d9wcuyxwit45t4sh";
 $password = "az9ia1foe8wzpcd3";
 $dbname = "i9zcmu88t2blefy2";
-$port = 3306; // Default MySQL port
+$port = 3306;
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname, $port);
