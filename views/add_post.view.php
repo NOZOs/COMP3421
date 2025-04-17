@@ -1,9 +1,13 @@
 <?php
 session_start();
 if (!isset($_SESSION['user_id'])) {
-    header("Location: index.php");
+    header("Location: ../index.php");
     exit();
 }
+
+require '../db_connect.php';
+require '../config.php';
+
 $errors = $_SESSION['errors'] ?? [];
 $success = $_SESSION['success'] ?? '';
 unset($_SESSION['errors'], $_SESSION['success']);
@@ -12,7 +16,7 @@ unset($_SESSION['errors'], $_SESSION['success']);
 <html>
 <head>
     <title>Add Post</title>
-    <link rel="stylesheet" href="dashstyle.css">
+    <link rel="stylesheet" href="../dashstyle.css">
 </head>
 <body>
     <div>
@@ -32,7 +36,7 @@ unset($_SESSION['errors'], $_SESSION['success']);
             </div>
             <button type="submit" name="add_post" class="btn btn-primary">Add Post</button>
         </form>
-        <a href="views/dashboard.view.php" class="btn btn-warning">Back to Dashboard</a>
+        <a href="../views/dashboard.view.php" class="btn btn-warning">Back to Dashboard</a>
     </div>
 </body>
 </html>

@@ -1,9 +1,13 @@
 <?php
 session_start();
 if (!isset($_SESSION['user_id'])) {
-    header("Location: index.php");
+    header("Location: ../index.php");
     exit();
 }
+
+require '../db_connect.php';
+require '../config.php';
+
 $errors = $_SESSION['errors'] ?? [];
 $success = $_SESSION['success'] ?? '';
 unset($_SESSION['errors'], $_SESSION['success']);
@@ -13,7 +17,7 @@ $post_id = (int)$_GET['id'];
 <html>
 <head>
     <title>Add Comment</title>
-    <link rel="stylesheet" href="dashstyle.css">
+    <link rel="stylesheet" href="../dashstyle.css">
 </head>
 <body>
     <div>
