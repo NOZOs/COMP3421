@@ -29,14 +29,14 @@ $post_id = (int)$_GET['id'];
         <?php if (isset($errors['content'])): ?>
             <div class="error-message"><?= htmlspecialchars($errors['content']) ?></div>
         <?php endif; ?>
-        <form accept-charset="UTF-8" role="form" method="post" action="controllers/comment.controller.php?id=<?= $post_id ?>" ?>
+        <form accept-charset="UTF-8" role="form" method="post" action="../controllers/comment.controller.php?id=<?= $post_id ?>" ?>
             <div>
                 <label for="content">comment:</label>
                 <textarea name="content" id="content" rows="5" cols="50" maxlength="255" required placeholder="Enter your comment (max 255 characters)"></textarea>
             </div>
             <button type="submit" name="add_comment" class="btn btn-primary">Add comment</button>
         </form>
-        <a href="views/dashboard.view.php" class="btn btn-warning">Back to Dashboard</a>
+        <a href="../views/dashboard.view.php" class="btn btn-warning">Back to Dashboard</a>
     </div>
 </body>
 </html>

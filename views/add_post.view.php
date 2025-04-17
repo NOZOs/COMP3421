@@ -29,7 +29,7 @@ unset($_SESSION['errors'], $_SESSION['success']);
         <?php if (isset($errors['content'])): ?>
             <div class="error-message"><?= htmlspecialchars($errors['content']) ?></div>
         <?php endif; ?>
-        <form accept-charset="UTF-8" role="form" method="post" action="controllers/post.controller.php">
+        <form accept-charset="UTF-8" role="form" method="post" action="../controllers/post.controller.php">
             <div>
                 <label for="content">Post Content:</label>
                 <textarea name="content" id="content" rows="5" cols="50" maxlength="255" required placeholder="Enter your post content (max 255 characters)"></textarea>
