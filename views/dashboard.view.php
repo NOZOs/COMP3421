@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['user_id'])) {
-    header("Location: app/index.php");
+    header("Location: ../index.php");
     exit();
 }
 
@@ -39,7 +39,7 @@ $stmt->close();
 <html>
 <head>
     <title>Dashboard</title>
-    <link rel="stylesheet" href="app/dashstyle.css">
+    <link rel="stylesheet" href="../dashstyle.css">
 </head>
 <body>
 
