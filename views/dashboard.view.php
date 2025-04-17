@@ -38,12 +38,12 @@ $stmt->close();
 <html>
 <head>
     <title>Dashboard</title>
-    <link rel="stylesheet" href="/COMP3421/dashstyle.css">
+    <link rel="stylesheet" href="dashstyle.css">
 </head>
 <body>
 
     <h1>Welcome, <?= htmlspecialchars($_SESSION['username']) ?> (Role: <?= htmlspecialchars($_SESSION['role']) ?>)</h1>
-    <a href="/COMP3421/controllers/logout.controller.php" class="btn btn-warning">Logout</a>
+    <a href="controllers/logout.controller.php" class="btn btn-warning">Logout</a>
     <h2>List of Posts</h2>
     <table class="table">
         <thead>
@@ -60,14 +60,14 @@ $stmt->close();
                 <td><?= htmlspecialchars($post['post_username']) ?></td>
                 <td><?= htmlspecialchars($post['post_content']) ?></td>
                 <td>
-                    <a href="/COMP3421/views/add_comment.view.php?id=<?= $post_id ?>" class="btn btn-warning">+ Add Comment</a>
+                    <a href="views/add_comment.view.php?id=<?= $post_id ?>" class="btn btn-warning">+ Add Comment</a>
                     <ul>
                         <?php if (!empty($post['comments'])): ?>
                             <?php foreach ($post['comments'] as $comment): ?>
                                 <li>
                                     <strong><?= htmlspecialchars($comment['username']) ?>:</strong> <?= htmlspecialchars($comment['content']) ?>
                                     <?php if ($_SESSION['role'] === 'admin'): ?>
-                                        <a href="/COMP3421/controllers/comment.controller.php?action=delete&id=<?= $comment['id'] ?>" class="btn btn-warning">Delete comment</a>
+                                        <a href="controllers/comment.controller.php?action=delete&id=<?= $comment['id'] ?>" class="btn btn-warning">Delete comment</a>
                                     <?php endif; ?>
                                 </li>
                             <?php endforeach; ?>
@@ -75,12 +75,12 @@ $stmt->close();
                     </ul>
                 </td>
                 <?php if ($_SESSION['role'] === 'admin'): ?>
-                    <td><a href="/COMP3421/controllers/post.controller.php?action=delete&id=<?= $post_id ?>" class="btn btn-primary">Delete post</a></td>
+                    <td><a href="controllers/post.controller.php?action=delete&id=<?= $post_id ?>" class="btn btn-primary">Delete post</a></td>
                 <?php endif; ?>
             </tr>
         <?php endforeach; ?>
         </tbody>
     </table>
-    <a href="/COMP3421/views/add_post.view.php" class="btn btn-warning">+ Add Post</a>
+    <a href="views/add_post.view.php" class="btn btn-warning">+ Add Post</a>
 </body>
 </html>
