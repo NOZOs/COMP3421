@@ -48,6 +48,7 @@ $stmt->close();
         gtag('js', new Date());
         gtag('config', 'G-QLF9JNV97F');
     </script>
+    <!-- Google Analytics end -->
 </head>
 <body>
 
