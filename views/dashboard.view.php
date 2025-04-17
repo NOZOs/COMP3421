@@ -40,14 +40,13 @@ $stmt->close();
 <head>
     <title>Dashboard</title>
     <link rel="stylesheet" href="../dashstyle.css">
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QLF9JNV97F"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
          function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
-    gtag('config', 'G-QLF9JNV97F');
+        gtag('config', 'G-QLF9JNV97F');
     </script>
 </head>
 <body>
