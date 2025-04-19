@@ -1,6 +1,6 @@
 # COMP3421
 
-1.Install Python<br />
+1.Install XAMPP<br />
 Download and install Python from https://www.apachefriends.org/download.html<br />
 Follow the installation instructions for your operating system.<br />
 
