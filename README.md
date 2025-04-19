@@ -1,7 +1,7 @@
 # COMP3421
 
 1.Install Python
-Download and install Python from https://www.apachefriends.org/download.html
+Download and install Python from https://www.apachefriends.org/download.html__
 Follow the installation instructions for your operating system.
 
 2.File
