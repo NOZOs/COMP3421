@@ -13,7 +13,7 @@ click the Start button next to Apache and MySQL.<br />
 
 4.Database Import<br />
 Open the shell of the XAMPP control panel<br />
-mysql -u root -p <i9zcmu88t2blefy2.sql<br />
+mysql -u root -p <htdocs/COMP3421/database.sql<br />
 
 5.Web Visit<br />
 Visit http://localhost/COMP3421 via a web browser<br />
