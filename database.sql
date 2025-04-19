@@ -31,4 +31,4 @@ DROP FOREIGN KEY comment_ibfk_1;
 
 ALTER TABLE comment
 ADD CONSTRAINT comment_ibfk_1
-FOREIGN KEY (post_id) REFERENCES post(id) ON DELETE CASCADE;
+FOREIGN KEY (post_id) REFERENCES post(id) ON DELETE CASCADE;v
