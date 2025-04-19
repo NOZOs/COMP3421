@@ -18,3 +18,5 @@ mysql -u root -p <htdocs/COMP3421/database.sql<br />
 5.Web Visit<br />
 Visit http://localhost/COMP3421 via a web browser<br />
 
+(Sign up for a "Admin" account is for testing in two role)
+
