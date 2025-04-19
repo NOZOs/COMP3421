@@ -18,5 +18,8 @@ mysql -u root -p <htdocs/COMP3421/database.sql<br />
 5.Web Visit<br />
 Visit http://localhost/COMP3421 via a web browser<br />
 
-(Sign up for a "Admin" account is for testing in two role)
+(Sign up for a "Admin" account is for testing in two role)<br />
+
+developed by polyu student for COMP3421 group project<br />
+owned by 24022663d,24022016d,24024291d
 
