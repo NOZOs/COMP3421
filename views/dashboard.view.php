@@ -7,6 +7,7 @@ if (!isset($_SESSION['user_id'])) {
 
 
 require '../db_connect.php';
+require '../config.php';
 
 
 $stmt = $conn->prepare("

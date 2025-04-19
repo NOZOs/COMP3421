@@ -3,7 +3,7 @@ session_start();
 require '../db_connect.php';
 
 if (!isset($_SESSION['user_id'])) {
-    header("Location: /COMP3421/index.php");
+    header("Location: ../index.php");
     exit();
 }
 
