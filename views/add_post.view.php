@@ -13,6 +13,13 @@ unset($_SESSION['errors'], $_SESSION['success']);
 <head>
     <title>Add Post</title>
     <link rel="stylesheet" href="/COMP3421/dashstyle.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QLF9JNV97F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-QLF9JNV97F');
+    </script>
 </head>
 <body>
     <div>
@@ -30,7 +37,7 @@ unset($_SESSION['errors'], $_SESSION['success']);
                 <label for="content">Post Content:</label>
                 <textarea name="content" id="content" rows="5" cols="50" maxlength="255" required placeholder="Enter your post content (max 255 characters)"></textarea>
             </div>
-            <button type="submit" name="add_post" class="btn btn-primary">Add Post</button>
+            <button type="submit" name="add_post" class="btn btn-primary" onclick="gtag('event', 'New post');">Add Post</button>
         </form>
         <a href="/COMP3421/views/dashboard.view.php" class="btn btn-warning">Back to Dashboard</a>
     </div>
